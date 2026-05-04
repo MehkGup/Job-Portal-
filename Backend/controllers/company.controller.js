@@ -100,5 +100,6 @@ export const updateCompany = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
+  
   }
 };
