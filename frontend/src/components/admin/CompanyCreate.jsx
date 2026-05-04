@@ -20,7 +20,7 @@ const CompanyCreate = () => {
             const res = await axios.post(`${COMPANY_API_END_POINT}/register`, { companyName }, {
                 headers: {
                     'Content-Type': 'application/json'
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`
+                    "Authorization": `Bearer ${localStorage.getItem('token')}`
                 },
                 withCredentials: true
             });
