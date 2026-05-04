@@ -45,18 +45,18 @@ const Login = () => {
       }
     } catch (error) {
       console.log(error);
-  console.log("FULL ERROR:", error);
-  console.log("RESPONSE:", error?.response);
-  console.log("DATA:", error?.response?.data);
+      console.log("FULL ERROR:", error);
+      console.log("RESPONSE:", error?.response);
+      console.log("DATA:", error?.response?.data);
 
-  alert(JSON.stringify(error?.response?.data)); // direct popup me dikhega
-}
-    } finally {
+      alert(JSON.stringify(error?.response?.data)); // direct popup me dikhega
+    }
+    finally {
       dispatch(setLoading(false));
     }
   }
-  useEffect(()=>{
-    if(user){
+  useEffect(() => {
+    if (user) {
       navigate("/");
     }
   })
