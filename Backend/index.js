@@ -16,6 +16,7 @@ const app = express();
 //         success:true
 //     })
 // })
+app.use(cors(corsOptions));
 app.use(express.json());
 // app.use((req, res, next) => {
 //   req.body = req.body || {};
@@ -29,7 +30,6 @@ const corsOptions={
     origin : "https://job-portal-frontend-fgmc.onrender.com",
     credentials : true
 }
-app.use(cors(corsOptions));
 
 const PORT = process.env.PORT|| 3000;
 
