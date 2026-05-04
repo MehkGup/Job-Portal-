@@ -124,6 +124,7 @@ const Signup = () => {
                   type="radio"
                   name="role"
                   value="student"
+                  id="r1"
                   checked={input.role === 'student'}
                   onChange={changeEventHandler}
                   className="cursor-pointer"
@@ -135,6 +136,7 @@ const Signup = () => {
                   type="radio"
                   name="role"
                   value="recruiter"
+                  id="r2"
                   checked={input.role === 'recruiter'}
                   onChange={changeEventHandler}
                   className="cursor-pointer"
