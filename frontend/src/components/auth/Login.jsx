@@ -45,7 +45,12 @@ const Login = () => {
       }
     } catch (error) {
       console.log(error);
-     toast.error(error?.response?.data?.message || "Login Failed");
+  console.log("FULL ERROR:", error);
+  console.log("RESPONSE:", error?.response);
+  console.log("DATA:", error?.response?.data);
+
+  alert(JSON.stringify(error?.response?.data)); // direct popup me dikhega
+}
     } finally {
       dispatch(setLoading(false));
     }
