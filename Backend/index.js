@@ -8,6 +8,7 @@ import companyRoute from './routes/company.route.js';
 import jobRoute from './routes/job.route.js';
 import applicationRoute from './routes/application.route.js';
 
+dotenv.config({});
 const app = express();
 // app.get("/home",(req,res)=>{
 //     return res.status(200).json({
@@ -22,7 +23,7 @@ app.use(express.json());
 // });
 
 app.use(express.urlencoded({ extended:true}));
-dotenv.config({});
+
 app.use(cookieParser());
 const corsOptions={
     origin : "https://job-portal-frontend-fgmc.onrender.com",
